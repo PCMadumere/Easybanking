@@ -152,7 +152,7 @@ footer{
     background-color: #170a3b;
     color: white;
     margin-top: 0;
-    padding: 30px;
+    padding: 30px 5rem;
 }
 
 .footer-nav{
@@ -317,8 +317,22 @@ button:hover{
         width: 85%;
     }
 
-    .article-info div{
-        text-align: center;
+    #home img{
+        width: 85%;
+    }
+
+    #home h1{
+        font-size: 35px;
+    }
+
+    #home p{
+        font-size: 16px;
+    }
+
+    #article h2{
+        font-size: 25px;
+        margin-bottom: 4px;
+        /* text-align: center; */
     }
 
     footer .copyright{
@@ -328,7 +342,39 @@ button:hover{
 }
 
 @media screen and (max-width: 480px) {
+    .article-info,
+    .blog-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .article-info{
+        text-align: center;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer ul li{
+        gap: 150px;
+    }
     
+    .img-soc{
+        text-align: center;
+        margin-bottom: 1px;
+    }
+    
+    footer .copyright{
+        width: 50%;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .copyright button{
+        padding: 8px 12px;
+        font-size: 13px;
+    }
 }
 
 
